@@ -121,18 +121,7 @@ export default function Footer() {
             <p className="text-gray-400 mb-4">
               Subscribe to our newsletter for updates and special offers.
             </p>
-            <div className="space-y-4">
-              <div className="relative">
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="w-full px-4 py-2 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:border-blue-500 text-white placeholder-gray-500"
-                />
-              </div>
-              <button className="w-full px-4 py-2 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-lg hover:from-blue-600 hover:to-blue-700 transition-colors">
-                Subscribe
-              </button>
-            </div>
+           
           </div>
         </div>
 
