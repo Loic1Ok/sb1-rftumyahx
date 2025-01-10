@@ -1,0 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Modern CSS Reset Enhancements */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    @apply bg-blue-500/20;
+  }
+}
+
+/* Advanced Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+@keyframes pulse-soft {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Custom Utility Classes */
+@layer utilities {
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .animate-pulse-soft {
+    animation: pulse-soft 2s ease-in-out infinite;
+  }
+
+  .animate-fadeIn {
+    animation: fadeIn 1s ease-out forwards;
+  }
+
+  .text-gradient {
+    background: linear-gradient(120deg, #60a5fa, #3b82f6, #93c5fd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% auto;
+    animation: shine 5s linear infinite;
+  }
+
+  .hover-lift {
+    @apply transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg;
+  }
+}
+
+/* Enhanced Card Styles */
+.card {
+  @apply relative overflow-hidden rounded-xl transition-all duration-300;
+  background: linear-gradient(to bottom right, #ffffff, #f8fafc);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transform: translateY(-2px);
+}
+
+/* Enhanced Button Styles */
+.btn {
+  @apply inline-flex items-center justify-center px-6 py-3 rounded-lg font-medium transition-all duration-300;
+  background: linear-gradient(to right, #3b82f6, #2563eb);
+  background-size: 200% auto;
+}
+
+.btn:hover {
+  background-position: right center;
+  transform: translateY(-1px);
+}
+
+/* Cloud Animations */
+.cloud-1, .cloud-2, .cloud-3 {
+  @apply absolute bg-white/90;
+  filter: blur(1px);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(255, 255, 255, 0.4);
+}
+
+.cloud-1 {
+  width: 100px;
+  height: 40px;
+  top: 20%;
+  left: -100px;
+  animation: moveCloud 25s linear infinite;
+}
+
+.cloud-2 {
+  width: 60px;
+  height: 30px;
+  top: 40%;
+  left: -60px;
+  animation: moveCloud 20s linear infinite;
+}
+
+.cloud-3 {
+  width: 80px;
+  height: 35px;
+  top: 60%;
+  left: -80px;
+  animation: moveCloud 30s linear infinite;
+}
+
+@keyframes moveCloud {
+  from { transform: translateX(0); }
+  to { transform: translateX(calc(100vw + 100px)); }
+}
+
+/* Bird Animations */
+.bird-1, .bird-2 {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: white;
+  clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+}
+
+.bird-1 {
+  top: 30%;
+  left: -10px;
+  animation: flyBird1 15s linear infinite;
+}
+
+.bird-2 {
+  top: 45%;
+  left: -10px;
+  animation: flyBird2 20s linear infinite;
+}
+
+@keyframes flyBird1 {
+  0% { transform: translateX(0) translateY(0); }
+  50% { transform: translateX(50vw) translateY(-20px); }
+  100% { transform: translateX(100vw) translateY(0); }
+}
+
+@keyframes flyBird2 {
+  0% { transform: translateX(0) translateY(0); }
+  50% { transform: translateX(50vw) translateY(20px); }
+  100% { transform: translateX(100vw) translateY(0); }
+}
