@@ -68,7 +68,7 @@
 /* Enhanced Card Styles */
 .card {
   @apply relative overflow-hidden rounded-xl transition-all duration-300;
-  background: linear-gradient(to bottom right, #ffffff, #f8fafc);
+  background: linear-gradient(to bottom right, #2dd4bf, #f8fafc);
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
@@ -126,14 +126,32 @@
   to { transform: translateX(calc(100vw + 100px)); }
 }
 
+  
 /* Bird Animations */
+@keyframes fly {
+  0% {
+    transform: translate(-50px, 0) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(200px, -50px) scale(1.2);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(500px, 100px) scale(1);
+    opacity: 1;
+  }
+}
+
 .bird-1, .bird-2 {
   position: absolute;
   width: 10px;
   height: 10px;
   background: white;
   clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+  animation: fly 5s infinite ease-in-out;
 }
+
 
 .bird-1 {
   top: 30%;
