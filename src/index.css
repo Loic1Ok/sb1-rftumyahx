@@ -154,16 +154,14 @@
 
 
 .bird-1 {
-  top: 30%;
-  left: -10px;
-  animation: flyBird1 15s linear infinite;
+  animation-delay: 0s;
 }
 
 .bird-2 {
-  top: 45%;
-  left: -10px;
-  animation: flyBird2 20s linear infinite;
+  animation-delay: 2s;
+  animation-duration: 6s;
 }
+
 
 @keyframes flyBird1 {
   0% { transform: translateX(0) translateY(0); }
