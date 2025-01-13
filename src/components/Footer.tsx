@@ -40,7 +40,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center group">
                 <MapPin className="h-5 w-5 mr-3 text-blue-400 group-hover:text-blue-300 transition-colors" />
-                <span>Port Mathurin, Rodrigues Island</span>
+                <span>Plain Corail, Rodrigues Island</span>
               </div>
             </div>
             
@@ -116,13 +116,7 @@ export default function Footer() {
           </div>
 
           {/* Newsletter */}
-          <div>
-            <h3 className="text-lg font-semibold mb-6">Newsletter</h3>
-            <p className="text-gray-400 mb-4">
-              Subscribe to our newsletter for updates and special offers.
-            </p>
-           
-          </div>
+          
         </div>
 
         {/* Bottom Bar */}
