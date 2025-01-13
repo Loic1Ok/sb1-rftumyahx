@@ -49,8 +49,8 @@ export default function Operations() {
     <section className="py-24 relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-indigo-100 via-purple-50 to-pink-50"></div>
-       <div
+  <div className="absolute inset-0 bg-gradient-to-br from-indigo-200 via-purple-100 to-pink-100"></div>
+  <div
     className="absolute inset-0"
     style={{
       backgroundImage: `
@@ -61,6 +61,8 @@ export default function Operations() {
       animation: 'gradientMove 10s linear infinite',
     }}
   ></div>
+</div>
+
 
       </div>
 
