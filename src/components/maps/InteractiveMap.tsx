@@ -14,7 +14,7 @@ const defaultIcon = new Icon({
 
 export default function InteractiveMap() {
   // Plaine Corail Airport coordinates
-  const position: [number, number] = [-19.7577, 63.3610];
+  const position: [number, number] = [-19.754259, 63.358508];
   
   return (
     <MapContainer 
