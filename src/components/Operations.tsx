@@ -49,11 +49,19 @@ export default function Operations() {
     <section className="py-24 relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-50 to-white"></div>
-        <div className="absolute inset-0" style={{
-          backgroundImage: 'linear-gradient(30deg, rgba(59, 130, 246, 0.05) 12%, transparent 12.5%, transparent 87%, rgba(59, 130, 246, 0.05) 87.5%, rgba(59, 130, 246, 0.05)), linear-gradient(150deg, rgba(59, 130, 246, 0.05) 12%, transparent 12.5%, transparent 87%, rgba(59, 130, 246, 0.05) 87.5%, rgba(59, 130, 246, 0.05))',
-          backgroundSize: '48px 84px'
-        }}></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-indigo-100 via-purple-50 to-pink-50"></div>
+       <div
+    className="absolute inset-0"
+    style={{
+      backgroundImage: `
+        linear-gradient(30deg, rgba(59, 130, 246, 0.05) 12%, transparent 12.5%, transparent 87%, rgba(59, 130, 246, 0.05) 87.5%, rgba(59, 130, 246, 0.05)),
+        linear-gradient(150deg, rgba(59, 130, 246, 0.05) 12%, transparent 12.5%, transparent 87%, rgba(59, 130, 246, 0.05) 87.5%, rgba(59, 130, 246, 0.05))
+      `,
+      backgroundSize: '48px 84px',
+      animation: 'gradientMove 10s linear infinite',
+    }}
+  ></div>
+
       </div>
 
       <div className="max-w-7xl mx-auto px-4 relative">
