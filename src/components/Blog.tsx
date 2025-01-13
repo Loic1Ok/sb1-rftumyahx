@@ -18,7 +18,7 @@ const posts = [
   },
   {
     title: "Safety Excellence Achievement",
-    image: "https://images.unsplash.com/photo-1513759565286-20e9c5fad06b",
+    image: "https://th.bing.com/th/id/OIP.VFN6po7rnGC-YHq4qDyt5QHaE8?rs=1&pid=ImgDetMain",
     date: "January 7, 2025",
     description: "Our airport ensures safety to all its passengers with world-class security measures.",
     category: "Safety"
