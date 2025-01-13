@@ -9,10 +9,10 @@ const departments = [
     head: {
       name: "Gail Leong Kye",
       title: "Airport Manager",
-      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a",
+      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2",
       description: "Over 20 years of aviation management experience, leading airport operations and strategic development."
     },
-    staffCount: 15,
+    staffCount: All department,
     responsibilities: [
       "Overall airport management",
       "Strategic planning",
